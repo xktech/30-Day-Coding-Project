@@ -18,7 +18,29 @@ def load_list():
         return []
 
 def remove_item():
-    pass
+    data = load_list()
+
+    if not data:
+        print("No tasks to remove.")
+        return data
+
+    view_list()
+    try:
+        target_id = int(input("Enter the ID to remove: "))
+    except ValueError:
+        print("Please enter a value.")
+        return data
+
+    new_data = [item for item in data if item["id"] != target_id]
+
+    if len(new_data) == len(data):
+        print(f"No tasks found with id {target_id}.")
+        return data
+
+    save_list(data)
+    print(f"Removed task: {target_id}.")
+    return new_data
+
 
 def add_item():
     data = load_list()

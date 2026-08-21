@@ -4,8 +4,7 @@ while True:
     print("1. ADD")
     print("2. REMOVE")
     print("3. VIEW")
-    print("4. SAVE")
-    print("5. EXIT")
+    print("4. EXIT")
 
 
     choice = input("> ").lower()
@@ -16,8 +15,6 @@ while True:
         remove_item()
     elif choice == "3":
         view_list()
-    elif choice == "4":
-        save_list()
     elif choice == "5":
         break
 
