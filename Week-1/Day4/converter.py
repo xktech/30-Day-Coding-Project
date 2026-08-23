@@ -1,9 +1,5 @@
 # Money, metric, distance, measurement converter
-#
-# GBP -> USD (22/08/26) = 1 : 1.36
-# MPH -> KPH = 1 : 1.60~
-# cm -> mm = 1 : 10
-# more
+
 
 import pint
 
