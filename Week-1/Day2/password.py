@@ -50,7 +50,7 @@ while True:
     print("1. GENERATE PASSWORD")
     print("2. EXIT")
 
-    choice = input("> ")
+    choice = input("[arch@xktech ~]$ ")
 
     if choice == "1":
         configure_password()

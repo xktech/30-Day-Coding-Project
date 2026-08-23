@@ -1,15 +1,12 @@
 # File organiser
 # I have already one this project so technically i'm skipping it.
 
-import watchdog
-import json
 import os
 import shutil
-import pathlib
-import argparse
-import logging
 
-FOLDER = os.path.expanduser("~/Downloads")
+directory = input("Enter the exact directory you want to sort: ")
+
+FOLDER = os.path.expanduser(directory)
 FILE_TYPES = {
     "Images": [".jpg", ".jpeg", ".png", ".gif", ".webp"],
     "PDFs": [".pdf"],

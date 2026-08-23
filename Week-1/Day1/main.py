@@ -7,7 +7,7 @@ while True:
     print("4. EXIT")
 
 
-    choice = input("> ").lower()
+    choice = input("[arch@xktech ~]$ ").lower()
 
     if choice == "1":
         add_item()
